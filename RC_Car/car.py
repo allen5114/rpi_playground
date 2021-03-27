@@ -4,9 +4,12 @@ from time import sleep
 class Car:
   def __init__(self, en1, in1, in2, in3, in4, en2):
     print("init")
+    # left motors
     self.en1 = en1
     self.in1 = in1
     self.in2 = in2
+    
+    # right motors
     self.in3 = in3
     self.in4 = in4
     self.en2 = en2

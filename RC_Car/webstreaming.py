@@ -15,11 +15,18 @@ import time
 import cv2
 import json
 
-# GPIO pins used on the car
+# GPIO pins for the left motors
+# GPIO 23 <-> Dark yellow wire
+# GPIO 24 <-> Light yellow wire
+# GPIO 18 <-> Black wire
 in1 = 23
 in2 = 24
 en1 = 18
 
+# GPIO pins for the right motors
+# GPIO 13 <-> Green wire
+# GPIO 6 <-> Blue wire
+# GPIO 19 <-> Gray wire
 in3 = 13
 in4 = 6
 en2 = 19
