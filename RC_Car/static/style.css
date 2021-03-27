@@ -1,0 +1,208 @@
+html, body, {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.wrapper {
+  max-width: 450px;
+  margin: auto;
+}
+
+.theme {
+  height: 200px;
+  width: 180px;  
+}
+
+.theme-table {
+  height: 77%;
+  width: 95%;  
+}
+
+.theme-table {
+  //border:1px solid black;
+  table-layout: fixed;
+  //border-spacing: 0px 0px;
+}
+
+.theme {
+  //background:url(images/PixelArt.png);
+  background-repeat:no-repeat;
+  background-size: contain;
+  width:50%;
+}
+
+.up_button{
+  background-image:url(up.png);
+  background-size:100%;
+  height:70px;
+  width:60px;
+  border: none;
+}
+
+.up_button:active{
+  height:70px;
+  width:60px;
+  background-color: yellow;
+  border:1px solid black;
+}
+
+.left_button{
+  background-image:url(left.png);
+  background-size:100%;
+  height:70px;
+  width:60px;
+  border: none;
+}
+
+.left_button:active{
+  height:70px;
+  width:60px;
+  background-color: yellow;
+  border:1px solid black;
+}
+
+.down_button{
+  background-image:url(down.png);
+  background-size:100%;
+  height:70px;
+  width:60px;
+  border: none;
+}
+
+.down_button:active{
+  height:70px;
+  width:60px;
+  background-color: yellow;
+  border:1px solid black;
+}
+
+.right_button{
+  background-image:url(right.png);
+  background-size:100%;
+  height:70px;
+  width:60px;
+  border: none;
+}
+
+.right_button:active{
+  height:70px;
+  width:60px;
+  background-color: yellow;
+  border:1px solid black;
+}
+
+label {
+  display:block;
+  width:100;
+  height:40;
+  text-align:left;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.halfDiv {
+	 width: 50%;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider2 {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #2196F3;
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider2:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider2::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: white;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider2::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: white;
+  cursor: pointer; /* Cursor on hover */
+}
