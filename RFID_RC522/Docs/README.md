@@ -20,6 +20,6 @@ sudo pip3 install mfrc522
 - RST connects to Pin 22.
 - 3.3v connects to Pin 1.
 
-#Credit to
+# Credit to
 
 https://pimylifeup.com/raspberry-pi-rfid-rc522/
