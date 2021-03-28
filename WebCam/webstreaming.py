@@ -1,11 +1,10 @@
 # import the necessary packages
 #import SingleMotionDetector
-from pyimagesearch.motion_detection.singlemotiondetector import SingleMotionDetector
+# from pyimagesearch.motion_detection.singlemotiondetector import SingleMotionDetector
 from imutils.video import VideoStream
 from flask import Response
 from flask import Flask
 from flask import render_template
-from flask import request
 
 import threading
 import argparse
