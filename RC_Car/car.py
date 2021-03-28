@@ -4,6 +4,7 @@ from time import sleep
 class Car:
   def __init__(self, en1, in1, in2, in3, in4, en2):
     print("init")
+    GPIO.cleanup()
     # left motors
     self.en1 = en1
     self.in1 = in1

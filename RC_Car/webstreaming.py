@@ -50,7 +50,7 @@ app = Flask(__name__)
  
 # initialize the video stream and allow the camera sensor to
 # warmup
-#vs = VideoStream(usePiCamera=1).start()
+# vs = VideoStream(usePiCamera=1).start()
 vs = VideoStream(src=0).start()
 time.sleep(2.0)
 
@@ -92,7 +92,7 @@ def detect_ball():
 	greenUpper = (64, 255, 255)
 
 	centerX = 0
-
+	
 	# keep looping
 	while True:
 		# grab the current frame

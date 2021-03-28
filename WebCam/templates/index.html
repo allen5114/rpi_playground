@@ -9,127 +9,14 @@
   <body>
   <div class="wrapper">
     <h3 align="center">Simple Web Cam</h3>
-    <img src="{{ url_for('video_feed') }}">
-<!--
-    <div class="theme" style="float: left;">
-      <table class="theme-table" >
-      <tr>
-        <td></td>
-        <td align="center" valign="bottom"><button id="f" value="f" class="up_button"></button></td>
-	<td></td>
-      </tr>
-      <tr>
-        <td align="center" valign="bottom"><button id="l" value="l" class="left_button"></button></td>
-        <td align="center" valign="bottom"><button id="b" value="b" class="down_button"></button></td>
-	<td align="center" valign="bottom"><button id="r" value="r" class="right_button"></button></td>
-      </tr>
-     </table>
-	</div>
-	<div class="halfDiv" style="float: right;">
-	  <label>Auto Drive</label>
-	  <label class="switch">
-        <input id="motion_detection" type="checkbox" checked>
-        <span class="slider round"></span>
-      </label>
-	  <br><br><br><label>PWM (Speed)</label>
-	  <div class="slidecontainer">
-        <input type="range" min="20" max="40" value="25" class="slider2" id="pwm">
-      </div>
-	</div>
--->
+    <img src="{{ url_for('video_feed') }}"></img>
+
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
   <script>
 /*
-function ajaxPost(key, value) {
-   $.ajax({
-       type: "POST",
-       url: "/control?"+key+"="+value,
-       success: function(result) {
-       },
-       error: function(result) {
-       }
-   });
-}
-
-// support iPhone touch
-function onTouchEnd(e) {
-  e.preventDefault();
-  ajaxPost("button", "stop");
-}
-
-$('#f').bind("touchend", onTouchEnd);
-$('#b').bind("touchend", onTouchEnd);
-$('#r').bind("touchend", onTouchEnd);
-$('#l').bind("touchend", onTouchEnd);
-
-
-$('#b').bind("touchstart", function(e) {
-    e.preventDefault();
-    ajaxPost("button", "backward");
-});
-
-$('#r').bind("touchstart", function(e) {
-    e.preventDefault();
-    ajaxPost("button", "right");
-});
-
-$('#l').bind("touchstart", function(e) {
-    e.preventDefault();
-    ajaxPost("button", "left");
-});
-
-$('#f').bind("touchstart", function(e) {
-    e.preventDefault();
-    ajaxPost("button", "forward");
-});
-*/
-/****************************************************/
-// Handle PC button clicks
-/*
-// send stop command
-function onButtonUp(e) {
-   e.preventDefault();
-   ajaxPost("button", "stop");
-}
-
-$("#f").mouseup(onButtonUp);
-$("#f").mousedown(function(e) {
-    e.preventDefault();
-    ajaxPost("button", "forward");
-});
-
-$("#l").mouseup(onButtonUp);
-$("#l").mousedown(function(e) {
-    e.preventDefault();
-    ajaxPost("button", "left");
-});
-
-$("#b").mouseup(onButtonUp);
-$("#b").mousedown(function(e) {
-    e.preventDefault();
-    ajaxPost("button", "backward");
-});
-
-$("#r").mouseup(onButtonUp);
-$("#r").mousedown(function(e) {
-    e.preventDefault();
-    ajaxPost("button", "right");
-});
-
-$('#motion_detection').change(function() {
-    ajaxPost("motion", this.checked);
-});
-
-
-$('#pwm').change(function(e) {
-    var val = $('#pwm').val();
-    ajaxPost("pwm", val);
-});
-
-*/
   </script>
 
 </div>
